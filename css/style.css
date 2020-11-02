@@ -1,12 +1,16 @@
-.container *{
-    background: pink;
+body {
+   background-color: #ff6600;
+}
+
+.container {
     display: grid;
     grid-template-rows: repeat(4, auto);
-    grid-template-columns: 1fr 2fr;
-    /*grid-template-areas:
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
         "tl"
+        "cd"
         "bt"
-        "ft";*/
+        "ft";
 }
 
 h1{
@@ -25,17 +29,21 @@ h1{
 
 nav {
     border: solid yellow 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
 
 .card {
     border: solid red 1px;
-    grid-area: bt;
+    grid-area: cd;
     display: flex;
     flex-flow: row;
 }
 
 .card figure {
-    background: grey;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -48,11 +56,10 @@ figure img {
 }
 
 figure figcaption {
-    padding: 1em;
+    padding: 2em;
 }
 
 .bio {
-
 }
 
 .buttons {
