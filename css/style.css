@@ -51,9 +51,7 @@ nav {
     justify-content: space-evenly;
     background-color: rgb(255, 230, 255);
     border-radius: 10px;
-
 }
-
 
 .card {
     grid-area: cd;
@@ -97,8 +95,18 @@ footer {
     background: rgb(115, 115, 115);
 }
 
+.subscribtion {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.subscribtion:first-child {
+    text-align: center;
+}
+
 .icon-bar {
-    margin: 20px;
+    margin: 10px;
     padding: 15px;
     display: flex;
     flex-flow: column;
@@ -133,6 +141,12 @@ footer {
   background: rgb(0, 123, 181);
   color: white;
   margin: 5px;
+}
+
+.github {
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    color: red;
 }
 
 nav, .fact {
