@@ -12,11 +12,14 @@
         <link href=
         "https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Itim&display=swap" rel="stylesheet">
     </head>
     <body>
         <section class="container">
             <article class="title-row">
                 <h1>Bunny's Blog</h1>
+                <i class="fa fa-bars"></i>
                 <nav>
                     <a href="#">Favorite foods</a>
                     <a href="#">Best friends</a>
@@ -29,7 +32,9 @@
                         <img src="images/bunny.jpg" alt="Maryna" width="80%"/>
                         <figcaption>Fluffy Bunny</figcaption>
                     </figure>
-                    <article class="fact">There is no difference between a
+                    <article class="fact">
+                        <h2>Interesting</h2>
+                        There is no difference between a
                         <strong> bunny</strong> and a <strong>rabbit</strong>.
                         Young rabbits may be called <em>kitten</em> or
                         <em>bunnies</em>. A rabbit and a <strong>hare</strong>
@@ -38,10 +43,25 @@
                     </article>
             </section>
             <footer>
-                <div class="buttons">
-                    <button type="button" name="button">Send me a warm letter
-                    </button>
+                <div class="subscribtion">
+                    <h3>Subscribe to our new posts!</h3>
+                    <form>
+                        <label for="name">Full Name</label><br>
+                        <input type="text" value=""><br>
+                        <label for="email">E-Mail</label><br>
+                        <input type="text" id="email" name="email" value="">
+                        <br>
+                        <input type="submit" value="Subscrite">
+                    </form>
+                     <br>
                 </div>
+                <br>
+                <div class="icon-bar">
+                    <a href="https://www.facebook.com/maryna.korzhyk"
+                       class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="mailto:cavilosa33@gmail.com" class="google"><i class="fa fa-google"></i></a>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                 </div>
             </footer>
         </section>
     </body>
