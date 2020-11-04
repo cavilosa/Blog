@@ -123,29 +123,38 @@ body {
         border-radius: 8px;
     }
 
+    .card figcaption {
+        font-size: 15px;
+    }
+
     .fact {
         padding: 10px;
     }
 
     .fact h2 {
-        font-size: 30px;
+        font-size: 20px;
+    }
+
+    h3 {
+        grid-area: po;
     }
 
     .posts {
         grid-area: po;
         display: flex;
         flex-flow: row;
+        align-items: baseline;
         background-image: url("../images/dolina-reki.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    h3 {
+    .posts h3 {
         text-align: center;
     }
 
     .post {
-        background-color: rgb(230, 230, 255);
+
         margin: 5px;
         text-align: center;
         border-radius: 5px;
@@ -156,12 +165,6 @@ body {
         border-radius: 3px;
         max-width: 90%;
     }
-
-    .icon-bar {
-        display: flex;
-        flex-flow: row;
-    }
-
 }
 
 
