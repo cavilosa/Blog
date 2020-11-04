@@ -20,8 +20,46 @@ body {
     align-items: center;
 }
 
+.text-title {
+    border: red solid;
+    display: flex;
+    flex-flow: row;
+}
+
 h1 {
     text-align: center;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover{
+    color: rgb(255, 77, 166);
+}
+
+nav {
+    font-size: 30px;
+    display: flex;
+    /*position: relative;*/
+    flex-flow: row;
+
+}
+
+nav {
+    font-family: 'Rubik', sans-serif;
+}
+
+.content {
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+nav:hover .content {
+    display: block;
+    position: relative;
 }
 
 p {
