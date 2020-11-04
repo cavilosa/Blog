@@ -12,8 +12,6 @@ body {
     width: 100vw;
 }
 
-
-
 .text {
     grid-area: tx;
     display: flex;
