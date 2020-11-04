@@ -112,6 +112,7 @@ body {
         font-size: 40px;
     }
 
+
     .card {
         grid-area: cd;
         display: flex;
