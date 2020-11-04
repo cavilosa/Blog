@@ -192,23 +192,34 @@ h3 {
     align-items: baseline;
 }
 
+a {
+    color: inherit;
+}
+
+a:hover{
+    color: rgb(255, 77, 166);
+}
+
 nav {
     font-size: 30px;
     display: flex;
     flex-flow: row;
-    align-items: center;
-
 }
 
-.content li {
-    font-size: 20px;
+nav {
+    font-family: 'Rubik', sans-serif;
+}
+
+.content {
+    font-size: 14px;
     display: none;
     position: absolute;
+    z-index: 1;
 }
 
 nav:hover .content {
     display: block;
-    position: fixed;
+    position: relative;
 }
 
 

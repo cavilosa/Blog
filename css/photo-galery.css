@@ -56,7 +56,7 @@ nav {
 
 nav:hover .content {
     display: block;
-    position: fixed;
+    position: relative;
 }
 
 p {
