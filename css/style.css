@@ -14,6 +14,11 @@ body {
         grid-gap: 10px;
     }
 
+    figure {
+        grid-area: cd;
+        max-width: 50%;
+    }
+
     .card {
         grid-area: cd;
         display: flex;
@@ -25,6 +30,8 @@ body {
     }
 
     figure {
+        grid-area: cd;
+        max-width: 50%;
     }
 
     .tablet {
@@ -119,7 +126,7 @@ body {
     .card {
         grid-area: cd;
         display: flex;
-        flex-flow: row;
+        flex-flow: column;
         justify-content: space-between;
         align-items: center;
         background-color: rgb(153, 153, 153);
