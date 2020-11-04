@@ -202,7 +202,7 @@ a:hover{
 nav {
     font-size: 30px;
     display: flex;
-    #position: relative;
+    position: relative;
     flex-flow: row;
     align-items: center;
 
@@ -224,7 +224,6 @@ nav:hover .content {
     display: block;
     position: relative;
 }
-
 
 figure {
     margin:auto;
