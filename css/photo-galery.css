@@ -1,11 +1,87 @@
+body {
+    background-image: url("../images/grass.jpg");
+}
+
 .galery {
-    border: solid 3px red;
-    display: grid;
+    grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-columns: repeat(1, 1fr;
     grid-template-areas:
         "tx"
-        "rw"
+        "pc"
         "ft";
-    gap: 10px;
+}
+
+.text {
+    grid-area: tx;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    grid-area: ft;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    background: rgb(115, 115, 115);
+}
+
+.subscribtion {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.subscribtion:first-child {
+    text-align: center;
+}
+
+.icon-bar {
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.icon-bar a:hover {
+  background-color: rgb(255, 230, 255);
+}
+
+.facebook {
+  background: rgb(59, 89, 152);
+  color: white;
+  margin: 5px;
+}
+
+.google {
+  background: rgb(221, 75, 57);
+  color: white;
+  margin: 5px;
+}
+
+.linkedin {
+  background: rgb(0, 123, 181);
+  color: white;
+  margin: 5px;
+}
+
+.github {
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    color: red;
 }
