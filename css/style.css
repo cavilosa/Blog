@@ -144,7 +144,7 @@ body {
         display: flex;
         flex-flow: row;
         align-items: baseline;
-        background-image: url("../images/dolina-reki.jpg");
+        background-image: url("../images/view.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -241,15 +241,27 @@ figure {
     padding:  20px;
 }
 
+figure {
+    border-radius: 25px;
+    background-color: rgb(242, 242, 242);
+    width: 80vw;
+}
+
 figure img {
-    border-radius: 15px;
+    border-radius: 50px;
 }
 
 figure figcaption {
     padding: 1em;
     font-family: 'Great Vibes';
-    font-size: 1.5em;
+    font-weight: bold;
+    font-size: 20px;
     text-align: center;
+}
+
+figure p {
+    text-align: center;
+    font-size: 15px;
 }
 
 footer {
