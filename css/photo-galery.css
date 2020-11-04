@@ -1,0 +1,11 @@
+.galery {
+    border: solid 3px red;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(1, 1fr;
+    grid-template-areas:
+        "tx"
+        "rw"
+        "ft";
+    gap: 10px;
+}
