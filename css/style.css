@@ -17,11 +17,14 @@ body {
     .card {
         grid-area: cd;
         display: flex;
-        flex-flow: row;
+        flex-flow: column;
         justify-content: space-around;
         background-color: rgb(153, 153, 153);
         padding: 3px;
         border-radius: 8px;
+    }
+
+    figure {
     }
 
     .tablet {
@@ -132,9 +135,7 @@ body {
         padding: 10px;
     }
 
-    .fact h2 {
-        font-size: 20px;
-    }
+
 
     h3 {
         color: rgb(255, 255, 255);
@@ -230,22 +231,18 @@ figure {
     flex-flow: column;
     align-items: center;
     padding: 5px;
-
+    border-radius: 25px;
+    background-color: rgb(242, 242, 242);
+    width: 80vw;
 }
 
-.fact h2 {
-    text-align: right;
+h2 {
+    text-align: center;
 }
 
 .fact {
     text-align: justify;
-    padding:  20px;
-}
-
-figure {
-    border-radius: 25px;
-    background-color: rgb(242, 242, 242);
-    width: 80vw;
+    padding:  10px;
 }
 
 figure img {
@@ -253,7 +250,6 @@ figure img {
 }
 
 figure figcaption {
-    padding: 1em;
     font-family: 'Great Vibes';
     font-weight: bold;
     font-size: 20px;
