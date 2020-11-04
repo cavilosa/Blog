@@ -182,13 +182,6 @@ h3 {
     font-family: 'Itim', cursive;
 }
 
-a {
-    color: inherit;
-}
-
-a:hover{
-    color: rgb(255, 77, 166);
-}
 
 .title-row {
     grid-area: tl;
@@ -207,12 +200,10 @@ nav {
 
 }
 
-.content {
+.content li {
     font-size: 20px;
     display: none;
-    position: fixed;
-    max-width:
-    z-index: 1;
+    position: absolute;
 }
 
 nav:hover .content {
