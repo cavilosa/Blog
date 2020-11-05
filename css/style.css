@@ -14,11 +14,6 @@ body {
         grid-gap: 10px;
     }
 
-    figure {
-        grid-area: cd;
-        max-width: 50%;
-    }
-
     .card {
         grid-area: cd;
         display: flex;
@@ -30,7 +25,6 @@ body {
     }
 
     figure {
-        grid-area: cd;
         max-width: 50%;
     }
 
