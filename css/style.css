@@ -48,14 +48,14 @@ body {
     .card {
         grid-area: cd;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column;
         background-color: rgb(153, 153, 153);
         padding: 3px;
         border-radius: 8px;
     }
 
     .card *{
-        background-color: rgb(204, 255, 255);
+        background-color: rgb(209, 209, 224);
         margin: 3px;
     }
 
@@ -99,7 +99,7 @@ body {
     }
 
     .card *{
-        background-color: rgb(204, 255, 255);
+        background-color: rgb(209, 209, 224);
         margin: 3px;
     }
 
@@ -146,7 +146,7 @@ body {
     .container {
         display: grid;
         grid-template-rows: repeat(4, auto);
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         grid-template-areas:
             "tl tl tl tl tl tl tl tl"
             "cd cd cd cd cd cd cd cd"
@@ -165,7 +165,7 @@ body {
     }
 
     .card *{
-        background-color: rgb(217, 217, 217);
+        background-color: rgb(209, 209, 224);
         margin: 3px;
     }
 
