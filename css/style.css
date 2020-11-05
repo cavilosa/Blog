@@ -17,17 +17,24 @@ body {
     .main-content {
         grid-area: cn;
         display: flex;
-        flex-flow: row;
-        width: 100vw;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: stretch;
+        background: red;
     }
 
     .card {
         display: flex;
         flex-flow: column;
-        justify-content: space-around;
+
         background-color: rgb(153, 153, 153);
-        padding: 3px;
+
         border-radius: 8px;
+    }
+
+    .posts {
+        display: flex;
+        flex-flow: column;
     }
 
     figure {
