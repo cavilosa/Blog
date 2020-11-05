@@ -1,0 +1,152 @@
+body {
+    background-color: grey;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1ft;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "hd"
+        "cn"
+        'ft';
+    gap: 5px;
+    width: 90vw;
+}
+
+header {
+    grid-area: hd;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: left;
+    background-color: rgb(192, 192, 192);
+    border-radius: 10px;
+    width: 90vw;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.content {
+    grid-area: cn;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content * {
+    background-color: rgb(192, 192, 192);
+}
+
+.card {
+    display: flex;
+    flex-flow: column;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card figure {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+.card .bio p{
+    margin: 10px;
+}
+
+.post {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.post h2 {
+    text-align: center;
+}
+
+.post p {
+    text-align: justify;
+}
+
+.photo-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photo-container img {
+    max-width: 230px;
+}
+
+.post p {
+    text-align:justify;
+}
+
+footer {
+    grid-area: ft;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    background: rgb(115, 115, 115);
+    width: 90vw;
+}
+
+.subscribtion {
+    display: flex;
+    flex-flow: column;
+
+}
+
+.subscribtion:first-child {
+    text-align: center;
+}
+
+.icon-bar {
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.icon-bar a:hover {
+  background-color: rgb(255, 230, 255);
+}
+
+.facebook {
+  background: rgb(59, 89, 152);
+  color: white;
+  margin: 5px;
+}
+
+.google {
+  background: rgb(221, 75, 57);
+  color: white;
+  margin: 5px;
+}
+
+.linkedin {
+  background: rgb(0, 123, 181);
+  color: white;
+  margin: 5px;
+}
+
+.github {
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    color: red;
+}

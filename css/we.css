@@ -6,6 +6,7 @@ body {
 section {
     padding: 20px;
     margin: 30px;
+    display: grid;
     grid-template-columns: 1fr 1 fr;
     grid-template-rows: repeat(3, 1fr);
 }
@@ -15,7 +16,7 @@ h1 {
 }
 
 .pics {
-    grid-area: 2/1/2/2;
+    grid-area: 2/1/2/1;
 }
 
 h2 {
