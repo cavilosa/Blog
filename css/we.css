@@ -6,11 +6,26 @@ body {
 section {
     padding: 20px;
     margin: 30px;
+    grid-template-columns: 1fr 1 fr;
+    grid-template-rows: repeat(3, 1fr);
 }
 
+h1 {
+    grid-area: 1/1/1/2;
+}
 
-section img {
-    margin: 20px;
+.pics {
+    grid-area: 2/1/2/2;
+}
+
+h2 {
+    background-image: url("../images/family.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.photo img {
+    margin: 100px;
     transform: rotate(90deg);
     width: 100%;
     height: auto;
