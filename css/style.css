@@ -9,13 +9,19 @@ body {
         grid-template-columns: 1fr;
         grid-template-areas:
             "tl"
-            "cd"
+            "cn"
             "ft";
         grid-gap: 10px;
     }
 
+    .main-content {
+        grid-area: cn;
+        display: flex;
+        flex-flow: row;
+        width: 100vw;
+    }
+
     .card {
-        grid-area: cd;
         display: flex;
         flex-flow: column;
         justify-content: space-around;
@@ -132,7 +138,7 @@ body {
         font-size: 15px;
     }
 
-    .fact {
+    .post {
         padding: 10px;
     }
 
@@ -156,7 +162,7 @@ body {
         text-align: center;
     }
 
-    .post {
+    .post-tablet {
 
         margin: 5px;
         text-align: center;
@@ -164,7 +170,7 @@ body {
         padding: 10px;
     }
 
-    .post img {
+    .post-tablet img {
         border-radius: 3px;
         max-width: 90%;
     }

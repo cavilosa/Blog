@@ -17,7 +17,7 @@
     </head>
     <body>
         <section class="container">
-            <article class="title-row">
+            <div class="title-row">
                 <h1>KievBrandon</h1>
                 <nav>
                     <i class="fa fa-bars"></i>
@@ -31,49 +31,53 @@
                         </ul>
                     </div>
                 </nav>
-            </article>
-            <section class="card">
-                    <figure>
-                        <img src="images/fox.jpg" alt="Andrey" width="80%"/>
-                        <figcaption>Андрей Гапонов</figcaption>
-                        <p>Master of Electrical Engeneering</p>
-                    </figure><br>
-                    <a href="posts.html"><h2>Посты</h2></a>
-                    <article class="fact">
-                        <h3>Фото дня</h3>
-                        <p>Вот подумал показывать что же такое БК, буду каждый
-                           день выкладывать по одной фотографии. Не знаю,
-                           получится ли делать это месяц, как того хочется, но
-                           на пару недель думаю моего запала хватит 🙂
-                           <a href="#">Read more</a></p>
+            </div>
+            <div class="main-content">
+                    <article class="card">
+                        <figure>
+                            <img src="images/fox.jpg" alt="Andrey" width="80%"/>
+                            <figcaption>Андрей Гапонов</figcaption>
+                            <p>Master of Electrical Engeneering</p>
+                        </figure><br>
                     </article>
-                    <article class="fact">
-                        <h3>Каждый кулик свое болото хвалит</h3>
-                        <p>Привет, вот я чуть более серьезно вернулся к блогу,
-                            даже не столько к самому блогу, сколько к ответам на
-                            вопросы, что вы мне присылаете по почте и возник у
-                            меня один вопрос. <a href="#">Read more</a> </p>
-                    </article>
-            </section>
-            <section class="posts tablet">
+                    <div class="posts">
+                        <a href="posts.html"><h2>Посты</h2></a>
+                        <article class="post">
+                            <h3>Фото дня</h3>
+                            <p>Вот подумал показывать что же такое БК, буду каждый
+                               день выкладывать по одной фотографии. Не знаю,
+                               получится ли делать это месяц, как того хочется, но
+                               на пару недель думаю моего запала хватит 🙂
+                               <a href="#">Read more</a></p>
+                        </article>
+                        <article class="post">
+                            <h3>Каждый кулик свое болото хвалит</h3>
+                            <p>Привет, вот я чуть более серьезно вернулся к блогу,
+                                даже не столько к самому блогу, сколько к ответам на
+                                вопросы, что вы мне присылаете по почте и возник у
+                                меня один вопрос. <a href="#">Read more</a> </p>
+                        </article>
+                    </div>
+            </div>
+            <article class="posts tablet">
                 <a href="photo-galery.html"><h3>Фотогалерея</h3></a>
-                <article class="post">
+                <div class="post-tablet">
                     <img src="images/Valter.jpg" alt="Dog">
                     <figcaption>Собака охраняка</figcaption>
-                </article>
-                <article class="post">
+                </div>
+                <div class="post-tablet">
                     <img src="images/fair.jpg" alt="fair">
                     <figcaption>Брендонская ярмарка 2013</figcaption>
-                </article>
-                <article class="post">
+                </div>
+                <div class="post-tablet">
                     <img src="images/summer fair.jpg" alt="summer fair">
                     <figcaption>Brandon Summer Fare 2013</figcaption>
-                </article>
-                <article class="post">
+                </div>
+                <div class="post-tablet">
                     <img src="images/tree.jpg" alt="tree">
                     <figcaption>Не знаю что, но красиво 🙂</figcaption>
-                </article>
-            </section>
+                </div>
+            </article>
             <footer>
                 <div class="subscribtion">
                     <h3>Subscribe to our new posts!</h3>
@@ -99,7 +103,6 @@
                         class="github"><i class="fa fa-github"></i></a>
                  </div>
             </footer>
-        </section>
         </section>
     </body>
 </html>
