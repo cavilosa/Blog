@@ -5,7 +5,7 @@ body {
 @media(max-width: 320px) {
     .container {
         display: grid;
-        grid-template-rows: repeat(3, auto);
+        grid-template-rows: repeat(4, auto);
         grid-template-columns: 1fr;
         grid-template-areas:
             "tl"
@@ -17,11 +17,15 @@ body {
     .card {
         grid-area: cd;
         display: flex;
-        flex-flow: row;
-        justify-content: space-around;
+        flex-flow: row wrap;
         background-color: rgb(153, 153, 153);
         padding: 3px;
         border-radius: 8px;
+    }
+
+    .card *{
+        background-color: rgb(204, 255, 255);
+        margin: 3px;
     }
 
     .tablet {
@@ -29,38 +33,7 @@ body {
     }
 }
 
-@media (min-width:320px) and (max-width:500px) {
-    .container {
-        display: grid;
-        grid-template-rows: repeat(3, auto);
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "tl tl"
-            "cd cd"
-            "ft ft";
-        grid-gap: 10px;
-    }
-
-    .card {
-        grid-area: cd;
-        display: flex;
-        flex-flow: column;
-        justify-content: space-around;
-        background-color: rgb(153, 153, 153);
-        padding: 3px;
-        border-radius: 8px;
-    }
-
-    figure img {
-        max-width: 200px;
-    }
-
-    .posts {
-        display: none;
-    }
-}
-
-@media (min-width:500px) and (max-width:600px){
+@media (min-width:320px) and (max-width:600px){
     .container {
         display: grid;
         grid-template-rows: repeat(3, auto);
@@ -75,11 +48,15 @@ body {
     .card {
         grid-area: cd;
         display: flex;
-        flex-flow: column;
-        justify-content: space-around;
+        flex-flow: row wrap;
         background-color: rgb(153, 153, 153);
         padding: 3px;
         border-radius: 8px;
+    }
+
+    .card *{
+        background-color: rgb(204, 255, 255);
+        margin: 3px;
     }
 
     figure img {
@@ -115,16 +92,15 @@ body {
     .card {
         grid-area: cd;
         display: flex;
-        flex-flow: row;
-        justify-content: space-between;
-        align-items: center;
+        flex-flow: row wrap;
         background-color: rgb(153, 153, 153);
         padding: 3px;
         border-radius: 8px;
     }
 
-    .card figcaption {
-        font-size: 15px;
+    .card *{
+        background-color: rgb(204, 255, 255);
+        margin: 3px;
     }
 
     .fact {
@@ -142,11 +118,10 @@ body {
     .posts {
         grid-area: po;
         display: flex;
-        flex-flow: row;
+        flex-flow: row ;
         align-items: baseline;
-        background-image: url("../images/dolina-reki.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color: rgb(153, 153, 153);
+        border-radius: 5px;
     }
 
     .posts h3 {
@@ -165,6 +140,61 @@ body {
         border-radius: 3px;
         max-width: 90%;
     }
+}
+
+@media (min-width:900px) {
+    .container {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "tl tl tl tl tl tl tl tl"
+            "cd cd cd cd cd cd cd cd"
+            "po po po po po po po po"
+            "ft ft ft ft ft ft ft ft";
+        grid-gap: 5px;
+    }
+
+    .card {
+        grid-area: cd;
+        display: flex;
+        flex-flow: row;
+        background-color: rgb(153, 153, 153);
+        padding: 3px;
+        border-radius: 8px;
+    }
+
+    .card *{
+        background-color: rgb(217, 217, 217);
+        margin: 3px;
+    }
+
+    .posts {
+        grid-area: po;
+        display: flex;
+        flex-flow: row;
+        align-items: baseline;
+        background-color: rgb(153, 153, 153);
+        border-radius: 5px;
+    }
+
+    .posts h3 {
+        text-align: center;
+    }
+
+    .post {
+
+        margin: 5px;
+        text-align: center;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .post img {
+        border-radius: 3px;
+        max-width: 90%;
+    }
+
 }
 
 
