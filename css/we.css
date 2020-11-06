@@ -1,35 +1,42 @@
 body {
-    margin: 15px;
-    padding: 20px;
+    background-color: rgb(204, 255, 255);
 }
 
 section {
-    padding: 20px;
-    margin: 30px;
+    border: solid red;
     display: grid;
-    grid-template-columns: 1fr 1 fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 300px 200px;
+    grid-template-areas:
+        "h1"
+        "pic"
+        "ft";
+    width: 100vw;
 }
 
 h1 {
-    grid-area: 1/1/1/2;
+    grid-area: h1;
+    text-align: center;
 }
 
 .pics {
-    grid-area: 2/1/2/1;
+    grid-area: pic;
+    border: solid green;
 }
 
-h2 {
-    background-image: url("../images/family.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
+.post {
+    display: flex;
+    flex-flow: column;
+    justify-content: ;
+    align-items: center;
 }
 
-.photo img {
-    margin: 100px;
-    transform: rotate(90deg);
-    width: 100%;
+.post img {
+    #transform: rotate(90deg);
+    width: 80%;
     height: auto;
+    max-width: 300px;
+    padding: 25px;
 }
 
 footer {
@@ -38,6 +45,7 @@ footer {
     flex-flow: row;
     justify-content: space-evenly;
     background: rgb(115, 115, 115);
+    width: 100vw;
 }
 
 .subscribtion {
