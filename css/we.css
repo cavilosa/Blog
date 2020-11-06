@@ -3,10 +3,9 @@ body {
 }
 
 section {
-    border: solid red;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 300px 200px;
+    grid-template-rows: 100px 500px 200px;
     grid-template-areas:
         "h1"
         "pic"
@@ -21,7 +20,6 @@ h1 {
 
 .pics {
     grid-area: pic;
-    border: solid green;
 }
 
 .post {
