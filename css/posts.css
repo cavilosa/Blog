@@ -26,6 +26,14 @@ body {
         width: 90vw;
     }
 
+    .card {
+        display: flex;
+        flex-flow: column;
+        text-align: justify;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
     .photo-container {
         display: flex;
         flex-flow: column;
@@ -92,6 +100,14 @@ body {
 
     }
 
+    .card {
+        display: flex;
+        flex-flow: column;
+        text-align: justify;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
     .photo-container {
         display: flex;
         flex-flow: row wrap;
@@ -133,7 +149,93 @@ body {
 
 }
 
+@media (min-width:600px) and (max-width:900px) {
+    section {
+        display: grid;
+        grid-template-columns: 1ft;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "hd"
+            "cn"
+            "ft";
+        gap: 5px;
+    }
 
+    header {
+        grid-area: hd;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: left;
+        background-color: rgb(192, 192, 192);
+        border-radius: 10px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .content {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .card {
+        display: flex;
+        flex-flow: row;
+        text-align: justify;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    figure img {
+        max-width: 500px;
+    }
+
+    .photo-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .photo-container img {
+        max-width: 400px;
+        max-height: 300px;
+        margin: 10px;
+    }
+
+    footer {
+        grid-area: ft;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        background: rgb(115, 115, 115);
+        padding: 30px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .subscribtion {
+        display: flex;
+        flex-flow: column;
+
+    }
+
+    .subscribtion:first-child {
+        text-align: center;
+    }
+
+    .icon-bar {
+        margin: 10px;
+        padding: 15px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
 
 a:hover {
     color: rgb(255, 255, 255);
@@ -149,14 +251,6 @@ a:hover {
 
 .content * {
     background-color: rgb(192, 192, 192);
-}
-
-.card {
-    display: flex;
-    flex-flow: column;
-    text-align: justify;
-    padding: 10px;
-    border-radius: 5px;
 }
 
 .card figure {
@@ -181,12 +275,6 @@ a:hover {
 
 .post p {
     text-align: justify;
-}
-
-
-
-.post p {
-    text-align:justify;
 }
 
 .fa {
