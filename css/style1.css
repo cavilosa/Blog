@@ -60,12 +60,12 @@ figure {
     padding: 5px;
 }
 
-.fact {
+.post {
     text-align: justify;
     padding:  20px;
 }
 
-.fact h2 {
+.post h2 {
     text-align: right;
 }
 
@@ -142,7 +142,7 @@ footer {
     color: red;
 }
 
-nav, .fact {
+nav, .post {
     font-family: 'Rubik', sans-serif;
 }
 
@@ -207,7 +207,7 @@ nav, .fact {
         max-width: 200px;
     }
 
-    .posts {
+    .photos{
         display: none;
     }
 }
@@ -251,11 +251,11 @@ nav, .fact {
         margin: 3px;
     }
 
-    .fact {
+    .post {
         padding: 10px;
     }
 
-    .fact h2 {
+    .post h2 {
         font-size: 20px;
     }
 
@@ -263,7 +263,7 @@ nav, .fact {
         color: rgb(255, 255, 255);
     }
 
-    .posts {
+    .photos{
         grid-area: po;
         display: flex;
         flex-flow: row ;
@@ -272,12 +272,11 @@ nav, .fact {
         border-radius: 5px;
     }
 
-    .posts h3 {
+    .photosh3 {
         text-align: center;
     }
 
     .post {
-
         margin: 5px;
         text-align: center;
         border-radius: 5px;
@@ -317,7 +316,7 @@ nav, .fact {
         margin: 3px;
     }
 
-    .posts {
+    .photos{
         grid-area: po;
         display: flex;
         flex-flow: row;
@@ -326,7 +325,7 @@ nav, .fact {
         border-radius: 5px;
     }
 
-    .posts h3 {
+    .photosh3 {
         text-align: center;
     }
 
