@@ -40,9 +40,7 @@ h1 {
 }
 
 .post img {
-    #transform: rotate(90deg);
-    width: 80%;
-    height: auto;
+    max-height: 450px;
     max-width: 300px;
     padding: 25px;
 }
