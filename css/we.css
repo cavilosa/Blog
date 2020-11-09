@@ -7,14 +7,24 @@ section {
     grid-template-columns: 1fr;
     grid-template-rows: 100px 500px 200px;
     grid-template-areas:
-        "h1"
+        "tr"
         "pic"
         "ft";
     width: 100vw;
+    gap: 20px;
+}
+
+.title-row {
+    grid-area: tr;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 10px;
+    font-family: 'Rubik', sans-serif;
 }
 
 h1 {
-    grid-area: h1;
     text-align: center;
 }
 
@@ -98,8 +108,4 @@ footer {
     background-color: rgb(255, 255, 255);
     margin: 5px;
     color: red;
-}
-
-nav, .fact {
-    font-family: 'Rubik', sans-serif;
 }
