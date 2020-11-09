@@ -2,6 +2,40 @@ body {
    background-color: rgb(192, 192, 192);
 }
 
+.container {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "tl"
+        "cd"
+        "ft";
+    grid-gap: 10px;
+}
+
+.title-row {
+    grid-area: tl;
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.card {
+    grid-area: cd;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(153, 153, 153);
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.card *{
+    background-color: rgb(192, 192, 192);
+    margin: 3px;
+}
+
 h1 {
     font-family: 'Great Vibes';
     font-size: 30px;
@@ -14,15 +48,6 @@ h2 {
 h3 {
     font-family: 'Crimson Text', serif;
     font-family: 'Itim', cursive;
-}
-
-.title-row {
-    grid-area: tl;
-    text-align: center;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-    align-items: baseline;
 }
 
 a {
@@ -55,17 +80,16 @@ nav:hover .content {
     position: relative;
 }
 
-
 figure {
     margin:auto;
     display: flex;
     flex-flow: column;
     align-items: center;
     padding: 5px;
-
 }
 
 .fact {
+    font-family: 'Rubik', sans-serif;
     text-align: justify;
     padding:  20px;
 }
@@ -84,6 +108,10 @@ figure figcaption {
     font-family: 'Great Vibes';
     font-size: 1.5em;
     text-align: center;
+}
+
+.tablet, .large-screen {
+    display: none;
 }
 
 footer {
@@ -148,45 +176,6 @@ footer {
     color: red;
 }
 
-nav, .fact {
-    font-family: 'Rubik', sans-serif;
-}
-
-@media(max-width: 320px) {
-    .container {
-        display: grid;
-        grid-template-rows: repeat(4, auto);
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "tl"
-            "cd"
-            "ft";
-        grid-gap: 10px;
-    }
-
-    .card {
-        grid-area: cd;
-        display: flex;
-        flex-flow: row wrap;
-        background-color: rgb(153, 153, 153);
-        padding: 3px;
-        border-radius: 8px;
-    }
-
-    .card *{
-        background-color: rgb(192, 192, 192);
-        margin: 3px;
-    }
-
-    .tablet {
-        display: none;
-    }
-
-    .large-screen {
-        display: none;
-    }
-}
-
 @media (min-width:320px) and (max-width:600px){
     .container {
         display: grid;
@@ -200,30 +189,13 @@ nav, .fact {
     }
 
     .card {
-        grid-area: cd;
-        display: flex;
         flex-direction: column-reverse;
-        background-color: rgb(153, 153, 153);
-        padding: 3px;
-        border-radius: 8px;
-    }
-
-    .card *{
-        background-color: rgb(192, 192, 192);
-        margin: 3px;
     }
 
     figure img {
         max-width: 200px;
     }
 
-    .posts {
-        display: none;
-    }
-
-    .large-screen {
-        display: none;
-    }
 }
 
 @media (min-width: 600px) and (max-width:900px) {
@@ -248,21 +220,11 @@ nav, .fact {
     }
 
     .card {
-        grid-area: cd;
-        display: flex;
         flex-flow: column-reverse;
-        background-color: rgb(153, 153, 153);
-        padding: 3px;
-        border-radius: 8px;
     }
 
     figure img {
         max-width: 200px;
-    }
-
-    .card *{
-        background-color: rgb(192, 192, 192);
-        margin: 3px;
     }
 
     .fact {
@@ -279,7 +241,6 @@ nav, .fact {
     }
 
     .post {
-
         margin: 5px;
         text-align: center;
         border-radius: 5px;
@@ -289,10 +250,6 @@ nav, .fact {
     .post img {
         border-radius: 3px;
         max-width: 90%;
-    }
-
-    .large-screen {
-        display: none;
     }
 }
 
@@ -310,17 +267,8 @@ nav, .fact {
     }
 
     .card {
-        grid-area: cd;
-        display: flex;
-        flex-flow: row;
-        background-color: rgb(153, 153, 153);
-        padding: 3px;
-        border-radius: 8px;
-    }
 
-    .card *{
-        background-color: rgb(192, 192, 192);
-        margin: 3px;
+        flex-flow: row;
     }
 
     .posts {
@@ -333,7 +281,6 @@ nav, .fact {
     }
 
     .post {
-
         margin: 5px;
         text-align: center;
         border-radius: 5px;
