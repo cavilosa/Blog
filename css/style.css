@@ -66,10 +66,6 @@ figure {
 
 }
 
-.fact h2 {
-    text-align: right;
-}
-
 .fact {
     text-align: justify;
     padding:  20px;
@@ -244,7 +240,7 @@ nav, .fact {
         grid-gap: 5px;
     }
 
-    .title-row h1 {
+    .title-row {
         font-size: 50px;
     }
 
@@ -274,14 +270,6 @@ nav, .fact {
         padding: 10px;
     }
 
-    .fact h2 {
-        font-size: 20px;
-    }
-
-    h3 {
-        color: rgb(255, 255, 255);
-    }
-
     .posts {
         grid-area: po;
         display: flex;
@@ -289,10 +277,6 @@ nav, .fact {
         align-items: baseline;
         background-color: rgb(153, 153, 153);
         border-radius: 5px;
-    }
-
-    .posts h3 {
-        text-align: center;
     }
 
     .post {
@@ -349,10 +333,6 @@ nav, .fact {
         border-radius: 5px;
     }
 
-    .posts h3 {
-        text-align: center;
-    }
-
     .post {
 
         margin: 5px;
@@ -371,8 +351,14 @@ nav, .fact {
     }
 }
 
-@media (min-width:1100px) {
+@media (min-width:1200px) {
+    .fact {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
     .large-screen {
-        display: inline;
+        display: block;
     }
 }
