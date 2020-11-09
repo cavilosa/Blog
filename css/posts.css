@@ -98,9 +98,9 @@ footer {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, auto);
         grid-template-areas:
-            "hd hd hd hd hd hd"
-            "cn cn cn cn cn cn"
-            "ft ft ft ft ft ft";
+            "hd hd hd"
+            "cn cn cn"
+            'ft ft ';
         grid-gap: 5px;
     }
 
