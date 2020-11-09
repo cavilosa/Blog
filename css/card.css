@@ -1,0 +1,13 @@
+.card {
+    grid-area: cd;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(153, 153, 153);
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.card *{
+    background-color: rgb(192, 192, 192);
+    margin: 3px;
+}
