@@ -75,8 +75,13 @@ figure {
     padding:  20px;
 }
 
+.post-card p {
+    text-align: center;
+}
+
 figure img {
     border-radius: 15px;
+    width: 80%;
 }
 
 figure figcaption {
