@@ -1,6 +1,6 @@
 @import "footer.css";
 @import "title-row.css";
-@import "card.css";
+@import "card-posts.css";
 
 body {
    background-color: rgb(192, 192, 192);
@@ -189,7 +189,7 @@ footer {
         grid-gap: 10px;
     }
 
-    .card {
+    .card-posts {
         flex-direction: column-reverse;
     }
 
@@ -220,7 +220,7 @@ footer {
         font-size: 40px;
     }
 
-    .card {
+    .card-posts {
         flex-flow: column-reverse;
     }
 
@@ -267,7 +267,7 @@ footer {
         grid-gap: 5px;
     }
 
-    .card {
+    .card-posts {
 
         flex-flow: row;
     }
