@@ -1,0 +1,21 @@
+@media (min-width:320px) and (max-width:600px){
+    .container {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "tl tl tl tl"
+            "cd cd cd cd"
+            "ft ft ft ft";
+        grid-gap: 10px;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+    }
+
+    figure img {
+        max-width: 200px;
+    }
+
+}

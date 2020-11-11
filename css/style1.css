@@ -1,20 +1,5 @@
-@import "footer.css";
-@import "title-row.css";
-@import "card-posts.css";
-
 body {
    background-color: rgb(192, 192, 192);
-}
-
-.container {
-    display: grid;
-    grid-template-rows: repeat(4, auto);
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "tl"
-        "cd"
-        "ft";
-    grid-gap: 10px;
 }
 
 h1 {
@@ -29,6 +14,15 @@ h2 {
 h3 {
     font-family: 'Crimson Text', serif;
     font-family: 'Itim', cursive;
+}
+
+.title-row {
+    grid-area: tl;
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: baseline;
 }
 
 a {
@@ -46,16 +40,16 @@ nav {
     font-family: 'Rubik', sans-serif;
 }
 
-nav:hover .content {
-    display: block;
-    position: relative;
-}
-
 .content {
     font-size: 14px;
     display: none;
     position: absolute;
     z-index: 1;
+}
+
+nav:hover .content {
+    display: block;
+    position: relative;
 }
 
 figure {
@@ -66,19 +60,17 @@ figure {
     padding: 5px;
 }
 
-.blog-post {
-    font-family: 'Rubik', sans-serif;
+.post {
     text-align: justify;
     padding:  20px;
 }
 
-.post-card p {
-    text-align: center;
+.post h2 {
+    text-align: right;
 }
 
 figure img {
     border-radius: 15px;
-    width: 80%;
 }
 
 figure figcaption {
@@ -88,8 +80,101 @@ figure figcaption {
     text-align: center;
 }
 
-.tablet, .large-screen, .bio {
-    display: none;
+footer {
+    grid-area: ft;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    background: rgb(115, 115, 115);
+}
+
+.subscribtion {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.subscribtion:first-child {
+    text-align: center;
+}
+
+.icon-bar {
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.icon-bar a:hover {
+  background-color: rgb(255, 230, 255);
+}
+
+.facebook {
+  background: rgb(59, 89, 152);
+  color: white;
+  margin: 5px;
+}
+
+.google {
+  background: rgb(221, 75, 57);
+  color: white;
+  margin: 5px;
+}
+
+.linkedin {
+  background: rgb(0, 123, 181);
+  color: white;
+  margin: 5px;
+}
+
+.github {
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    color: red;
+}
+
+nav, .post {
+    font-family: 'Rubik', sans-serif;
+}
+
+@media(max-width: 320px) {
+    .container {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "tl"
+            "cd"
+            "ft";
+        grid-gap: 10px;
+    }
+
+    .card {
+        grid-area: cd;
+        display: flex;
+        flex-flow: row wrap;
+        background-color: rgb(153, 153, 153);
+        padding: 3px;
+        border-radius: 8px;
+    }
+
+    .card *{
+        background-color: rgb(192, 192, 192);
+        margin: 3px;
+    }
+
+    .tablet {
+        display: none;
+    }
 }
 
 @media (min-width:320px) and (max-width:600px){
@@ -104,14 +189,27 @@ figure figcaption {
         grid-gap: 10px;
     }
 
-    .card-posts {
+    .card {
+        grid-area: cd;
+        display: flex;
         flex-direction: column-reverse;
+        background-color: rgb(153, 153, 153);
+        padding: 3px;
+        border-radius: 8px;
+    }
+
+    .card *{
+        background-color: rgb(192, 192, 192);
+        margin: 3px;
     }
 
     figure img {
         max-width: 200px;
     }
 
+    .photos{
+        display: none;
+    }
 }
 
 @media (min-width: 600px) and (max-width:900px) {
@@ -127,7 +225,7 @@ figure figcaption {
         grid-gap: 5px;
     }
 
-    .title-row {
+    .title-row h1 {
         font-size: 50px;
     }
 
@@ -135,25 +233,47 @@ figure figcaption {
         font-size: 40px;
     }
 
-    .card-posts {
+    .card {
+        grid-area: cd;
+        display: flex;
         flex-flow: column-reverse;
+        background-color: rgb(153, 153, 153);
+        padding: 3px;
+        border-radius: 8px;
     }
 
     figure img {
         max-width: 200px;
     }
 
-    .blog-post {
+    .card *{
+        background-color: rgb(192, 192, 192);
+        margin: 3px;
+    }
+
+    .post {
         padding: 10px;
     }
 
-    .posts {
+    .post h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        color: rgb(255, 255, 255);
+    }
+
+    .photos{
         grid-area: po;
         display: flex;
         flex-flow: row ;
         align-items: baseline;
         background-color: rgb(153, 153, 153);
         border-radius: 5px;
+    }
+
+    .photosh3 {
+        text-align: center;
     }
 
     .post {
@@ -182,11 +302,21 @@ figure figcaption {
         grid-gap: 5px;
     }
 
-    .card-posts {
+    .card {
+        grid-area: cd;
+        display: flex;
         flex-flow: row;
+        background-color: rgb(153, 153, 153);
+        padding: 3px;
+        border-radius: 8px;
     }
 
-    .posts {
+    .card *{
+        background-color: rgb(192, 192, 192);
+        margin: 3px;
+    }
+
+    .photos{
         grid-area: po;
         display: flex;
         flex-flow: row;
@@ -195,7 +325,12 @@ figure figcaption {
         border-radius: 5px;
     }
 
+    .photosh3 {
+        text-align: center;
+    }
+
     .post {
+
         margin: 5px;
         text-align: center;
         border-radius: 5px;
@@ -206,71 +341,4 @@ figure figcaption {
         border-radius: 3px;
         max-width: 90%;
     }
-
-    .large-screen {
-        display: none;
-    }
-}
-
-@media (min-width:1200px) {
-    .card-posts {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas:
-        "pc pc bp1 bp1 bp2 bp2"
-        "bi bi ls1 ls1 ls2 ls2";
-    }
-
-    .post-card {
-        grid-area: pc;
-    }
-
-    figure img {
-        max-width: 30%;
-    }
-
-    #blog-post-1 {
-        grid-area: bp1;
-    }
-
-    #blog-post-2 {
-        grid-area: bp2;
-    }
-
-    .bio {
-        grid-area: bi;
-        display: inline;
-    }
-
-    #large-screen-1 {
-        grid-area: ls1;
-        display: inline;
-    }
-
-    #large-screen-2 {
-        gird-area: ls2;
-        display: inline;
-    }
-
-    .bio, #large-screen-1, #large-screen-2 {
-        font-family: 'Rubik', sans-serif;
-        text-align: justify;
-        padding:  20px;
-    }
-
-    /*
-    .blog-post {
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
-    }
-
-    .blog-post >* {
-        padding: 10px;
-    }
-
-    .large-screen {
-        display: block;
-    }*/
 }

@@ -1,77 +1,48 @@
 body {
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(204, 255, 255);
 }
 
-.galery {
-    grid-template-columns: 100vw;
-    grid-template-rows: repeat(3, auto);
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 500px 200px;
     grid-template-areas:
-        "tx"
-        "pc"
+        "tr"
+        "pic"
         "ft";
     width: 100vw;
+    gap: 20px;
 }
 
-.text {
-    grid-area: tx;
-    display: flex;
-    flex-flow: column;
-    padding: 100px;
-}
-
-.text-title {
+.title-row {
+    grid-area: tr;
     display: flex;
     flex-flow: row;
-    font-size: 1.5em;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 10px;
+    font-family: 'Rubik', sans-serif;
 }
 
 h1 {
     text-align: center;
 }
 
-a {
-    color: inherit;
+.pics {
+    grid-area: pic;
 }
 
-a:hover{
-    color: rgb(255, 77, 166);
-}
-
-nav {
-    font-size: 0.5em;
-    display: flex;
-    flex-flow: row;
-    font-family: 'Rubik', sans-serif;
-}
-
-p {
-    text-align: justify;
-    font-size: 1.5em;
-}
-
-.pictuires {
-    grid-area: pc;
+.post {
     display: flex;
     flex-flow: column;
-}
-
-.picture {
-    margin-bottom: 20px;
-    margin-top: 10px;
-    padding-left: 30px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
+    justify-content: ;
     align-items: center;
 }
 
-.picture img {
-    max-width: 70vw;
-}
-
-figcaption {
-    text-align: center;
+.post img {
+    max-height: 450px;
+    max-width: 300px;
+    padding: 25px;
 }
 
 footer {
@@ -80,6 +51,7 @@ footer {
     flex-flow: row;
     justify-content: space-evenly;
     background: rgb(115, 115, 115);
+    width: 100vw;
 }
 
 .subscribtion {
@@ -134,24 +106,4 @@ footer {
     background-color: rgb(255, 255, 255);
     margin: 5px;
     color: red;
-}
-
-@media (max-width:500px) {
-    .text {
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 1em;
-    }
-
-    nav {
-        font-size: 0.7em;
-    }
-}
-
-@media (min-width:500px) {
-    nav {
-        font-size: 0.7em;
-    }
 }

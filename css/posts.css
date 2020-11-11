@@ -1,0 +1,283 @@
+body {
+    background-color: grey;
+}
+section {
+    display: grid;
+    grid-template-columns: 1ft;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "hd"
+        "cn"
+        "ft";
+    grid-gap: 5px;
+    width: 90vw;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+header {
+    grid-area: hd;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: left;
+    background-color: rgb(192, 192, 192);
+    border-radius: 10px;
+    width: 90vw;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.content * {
+    background-color: rgb(192, 192, 192);
+}
+
+.card figure {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+.card .bio p{
+    margin: 10px;
+}
+
+.post {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.post h2 {
+    text-align: center;
+}
+
+.post p {
+    text-align: justify;
+}
+
+.content {
+    grid-area: cn;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-flow: column;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card img {
+    width: 80%;
+}
+
+.photo-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photo-container img {
+    max-width: 230px;
+}
+
+footer {
+    grid-area: ft;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    background: rgb(115, 115, 115);
+    width: 90vw;
+}
+
+.subscribtion {
+    display: flex;
+    flex-flow: column;
+}
+
+.subscribtion:first-child {
+    text-align: center;
+}
+
+.icon-bar {
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.icon-bar a:hover {
+    background-color: rgb(255, 230, 255);
+}
+
+.facebook {
+    background: rgb(59, 89, 152);
+    color: white;
+    margin: 5px;
+}
+
+.google {
+    background: rgb(221, 75, 57);
+    color: white;
+    margin: 5px;
+}
+
+.linkedin {
+    background: rgb(0, 123, 181);
+    color: white;
+    margin: 5px;
+}
+
+.github {
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    color: red;
+}
+
+@media (min-width:320px) and (max-width:600px) {
+    section{
+        margin: auto;
+        line-height: 25px;
+    }
+
+    header {
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .photo-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .icon-bar {
+        flex-flow: row;
+    }
+
+    footer {
+
+    }
+}
+
+@media (min-width:600px) and (max-width:900px) {
+    section {
+        margin:auto;
+        line-height: 30px;
+    }
+
+    header {
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+
+    .card {
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    figure img {
+        max-width: 500px;
+    }
+
+    .photo-container {
+        flex-flow: row wrap;
+    }
+
+    .photo-container img {
+        max-width: 400px;
+        max-height: 300px;
+        margin: 10px;
+    }
+
+    footer {
+        flex-flow: row;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+
+    .subscribtion {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .subscribtion:first-child {
+        text-align: center;
+    }
+
+    .icon-bar {
+        flex-flow: column;
+    }
+}
+
+@media (min-width:900px) {
+    body {
+        padding:50px;
+    }
+
+    section {
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    header {
+        flex-flow: row;
+        justify-content: space-evenly;
+        border-radius: 10px;
+    }
+
+    .card {
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .post {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    figure img {
+        max-width: 600px;
+    }
+
+    .photo-container {
+        flex-flow: row wrap;
+    }
+
+    .photo-container img {
+        max-width: 400px;
+        max-height: 300px;
+        margin: 10px;
+    }
+
+    footer {
+        flex-flow: row;
+    }
+
+    .icon-bar {
+        flex-flow: column;
+    }
+}
