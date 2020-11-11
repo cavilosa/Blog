@@ -72,6 +72,10 @@ figure {
     padding:  20px;
 }
 
+.blog-post a {
+    text-align: center;
+}
+
 .post-card p {
     text-align: center;
 }
@@ -104,10 +108,6 @@ figure figcaption {
         grid-gap: 10px;
     }
 
-    .card-posts {
-        flex-direction: column-reverse;
-    }
-
     figure img {
         max-width: 200px;
     }
@@ -133,10 +133,6 @@ figure figcaption {
 
     .title-row .fa {
         font-size: 40px;
-    }
-
-    .card-posts {
-        flex-flow: column-reverse;
     }
 
     figure img {
@@ -184,6 +180,12 @@ figure figcaption {
 
     .card-posts {
         flex-flow: row;
+    }
+
+    #posts-link {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
     }
 
     .posts {
@@ -236,6 +238,10 @@ figure figcaption {
 
     #blog-post-2 {
         grid-area: bp2;
+    }
+
+    #posts-link {
+        display: none;
     }
 
     .bio {

@@ -1,7 +1,7 @@
 .card-posts {
     grid-area: cd;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     background-color: rgb(153, 153, 153);
     padding: 3px;
     border-radius: 8px;
