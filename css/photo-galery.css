@@ -12,6 +12,10 @@ body {
     width: 100vw;
 }
 
+.galery * {
+    padding-right: 10px;
+}
+
 .text {
     grid-area: tx;
     display: flex;
