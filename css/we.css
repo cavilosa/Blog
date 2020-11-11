@@ -18,9 +18,8 @@ section {
     grid-area: tr;
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
-    align-items: baseline;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
     font-family: 'Rubik', sans-serif;
     z-index: 2;
 }
