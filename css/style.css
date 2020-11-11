@@ -89,7 +89,7 @@ figure {
     padding: 5px;
 }
 
-.fact {
+.blog-post {
     font-family: 'Rubik', sans-serif;
     text-align: justify;
     padding:  20px;
@@ -228,7 +228,7 @@ footer {
         max-width: 200px;
     }
 
-    .fact {
+    .blog-post {
         padding: 10px;
     }
 
@@ -299,13 +299,13 @@ footer {
 }
 
 @media (min-width:1200px) {
-    .fact {
+    .blog-post {
         display: flex;
         flex-flow: column;
         justify-content: space-between;
     }
 
-    .fact >* {
+    .blog-post >* {
         padding: 10px;
     }
 
