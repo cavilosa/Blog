@@ -247,7 +247,8 @@ figure figcaption {
         grid-template-rows: repeat(2, auto);
         grid-template-areas:
         "pc pc bp1 bp1 bp2 bp2"
-        "bi bi ls1 ls1 ls2 ls2";
+        "bi bi ls1 ls1 ls2 ls2"
+        "pl pl pl pl pl pl";
     }
 
     .post-card {
@@ -267,7 +268,7 @@ figure figcaption {
     }
 
     #posts-link {
-        display: none;
+        grid-area: pl;
     }
 
     .bio {
