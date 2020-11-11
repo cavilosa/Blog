@@ -46,16 +46,16 @@ nav {
     font-family: 'Rubik', sans-serif;
 }
 
+nav:hover .content {
+    display: block;
+    position: relative;
+}
+
 .content {
     font-size: 14px;
     display: none;
     position: absolute;
     z-index: 1;
-}
-
-nav:hover .content {
-    display: block;
-    position: relative;
 }
 
 figure {
@@ -88,7 +88,7 @@ figure figcaption {
     text-align: center;
 }
 
-.tablet, .large-screen {
+.tablet, .large-screen, .bio {
     display: none;
 }
 
@@ -213,6 +213,53 @@ figure figcaption {
 }
 
 @media (min-width:1200px) {
+    .card-posts {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+        "pc pc bp1 bp1 bp2 bp2"
+        "bi bi ls1 ls1 ls2 ls2";
+    }
+
+    .post-card {
+        grid-area: pc;
+    }
+
+    figure img {
+        max-width: 30%;
+    }
+
+    #blog-post-1 {
+        grid-area: bp1;
+    }
+
+    #blog-post-2 {
+        grid-area: bp2;
+    }
+
+    .bio {
+        grid-area: bi;
+        display: inline;
+    }
+
+    #large-screen-1 {
+        grid-area: ls1;
+        display: inline;
+    }
+
+    #large-screen-2 {
+        gird-area: ls2;
+        display: inline;
+    }
+
+    .bio, #large-screen-1, #large-screen-2 {
+        font-family: 'Rubik', sans-serif;
+        text-align: justify;
+        padding:  20px;
+    }
+
+    /*
     .blog-post {
         display: flex;
         flex-flow: column;
@@ -225,5 +272,5 @@ figure figcaption {
 
     .large-screen {
         display: block;
-    }
+    }*/
 }
