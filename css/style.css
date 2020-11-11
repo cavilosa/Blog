@@ -285,7 +285,7 @@ figure figcaption {
     }
 
     #large-screen-2 {
-        gird-area: ls2;
+        grid-area: ls2;
         display: inline;
     }
 
