@@ -6,13 +6,22 @@
         initial-scale=1, shrink-to-fit=no">
         <title>Blog Homepage</title>
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Itim&display=swap" rel="stylesheet">
+        <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+        rel="stylesheet">
+        <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Itim&display=swap"
+        rel="stylesheet">
     </head>
     <body>
+        <!-- A container for the whole page -->
         <section class="container">
+            <!--First tor with blog title and navigation -->
             <article class="title-row">
                 <h1>КиевБрэндон</h1>
                 <nav>
@@ -20,11 +29,14 @@
                         <li><a href="posts.html">Посты</a></li>
                         <li><a href="we.html">Мы</a></li>
                         <li><a href="photo-galery.html">Фотогалерея</a></li>
-                        <li><a href="https://assiniboine.net/">Что нужно знать об АСС</a></li>
+                        <li><a href="https://assiniboine.net/">
+                            Что нужно знать об АСС</a></li>
                     </ul>
                 </nav>
             </article>
+            <!-- Container for card and posts-->
             <div class="card-posts">
+                <!-- Blog card  -->
                 <div class="post-card">
                     <figure>
                         <img src="images/fox.jpg" alt="Andrey"/>
@@ -32,17 +44,22 @@
                     </figure>
                     <p><u>Магистр Электроэнерготехники</u></p>
                     <p><u>СиПи Рэил, Специалист</u></p>
+                    <!-- Short bio appeard @media 600px-900px-->
                     <article class="post-bio">
-                            <h2><u>Краткая биография</u></h2>
-                            <p>Я — инженер электрик с опытом работы с оборудованием
+                        <h2><u>Краткая биография</u></h2>
+                        <p>
+                            Я — инженер электрик с опытом работы с оборудованием
                             220/380 и системами учета электроэнергии. Я же
                             специалист по оптимизации работы склада: увеличение
-                            производительности труда, внедрение ноу-хау, внедрение
-                            систем управления складом, складская экспертиза. Теперь я
-                            еще и студент колледжа по специальности – инженер связи
-                            (communication engineering technology – wireless).</p>
+                            производительности труда, внедрение ноу-хау,
+                            внедрение систем управления складом, складская
+                            экспертиза. Теперь я еще и студент колледжа по
+                            специальности – инженер связи (communication
+                            engineering technology – wireless).
+                        </p>
                     </article>
                 </div>
+                <!-- Posts -->
                 <article class="blog-post" id="blog-post-1">
                     <h2><u>Фото дня</u></h2>
                     <p>Вот подумал показывать что же такое БК, буду каждый
@@ -59,19 +76,24 @@
                         меня один вопрос.</p>
                         <b><a href="posts.html">Читать далее...</a></b>
                 </article>
+                <!-- Link to all the posts-->
                 <article class="blog-post" id="posts-link">
                     <a href="posts.html"><h2>Все посты</h2></a>
                 </article>
+                <!-- Short bio appears @media min 1200px-->
                 <div class="bio">
                     <h2><u>Краткая биография</u></h2>
-                    <p>Я — инженер электрик с опытом работы с оборудованием
-                    220/380 и системами учета электроэнергии. Я же
-                    специалист по оптимизации работы склада: увеличение
-                    производительности труда, внедрение ноу-хау, внедрение
-                    систем управления складом, складская экспертиза. Теперь я
-                    еще и студент колледжа по специальности – инженер связи
-                    (communication engineering technology – wireless).</p>
+                    <p>
+                        Я — инженер электрик с опытом работы с оборудованием
+                        220/380 и системами учета электроэнергии. Я же
+                        специалист по оптимизации работы склада: увеличение
+                        производительности труда, внедрение ноу-хау, внедрение
+                        систем управления складом, складская экспертиза. Теперь
+                        я еще и студент колледжа по специальности – инженер
+                        связи (communication engineering technology – wireless).
+                    </p>
                 </div>
+                <!-- Large screen posts appear @media min 1200-->
                 <article class="large-screen" id="large-screen-1">
                     <h2><u>Стоит почитать</u></h2>
                     <p>Привет, пока я немного сачкую, и пишу в блог
@@ -104,6 +126,7 @@
                         <b><a href="posts.html">Читать далее...</a></b>
                 </article>
             </div>
+            <!-- Some pics for 600px and more screen-->
             <div class="posts tablet">
                 <div class="post">
                     <img src="images/Valter.jpg" alt="Dog">
@@ -123,8 +146,10 @@
                     </a>
                 </div>
             </div>
+            <!-- Footer with subscribtion and social media links-->
             <footer lang="en">
                 <div class="subscribtion">
+                    <!-- subscribtion -->
                     <h3>Subscribe to our new posts!</h3>
                     <form>
                         <label for="name">Full Name</label><br>
@@ -137,6 +162,7 @@
                      <br>
                 </div>
                 <br>
+                <!--Social media links -->
                 <div class="icon-bar">
                     <a href="https://www.facebook.com/maryna.korzhyk"
                         class="facebook"><i class="fa fa-facebook"></i></a>
