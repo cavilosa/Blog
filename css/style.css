@@ -40,20 +40,16 @@ a:hover{
 }
 
 nav {
-    font-size: 30px;
+    font-size: 1em;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     font-family: 'Rubik', sans-serif;
-}
-
-nav:hover .content {
-    display: block;
-    position: relative;
+    align-items: stretch;
 }
 
 .content {
     font-size: 14px;
-    display: none;
+    display: block;
     position: absolute;
     z-index: 1;
 }
@@ -130,11 +126,11 @@ figure figcaption {
     }
 
     .title-row {
-        font-size: 50px;
+        font-size: 30px;
     }
 
-    .title-row .fa {
-        font-size: 40px;
+    nav {
+        font-size: 0.5em;
     }
 
     figure img {
