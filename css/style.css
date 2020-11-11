@@ -66,7 +66,7 @@ figure {
     padding: 5px;
 }
 
-.blog-post {
+.blog-post, .post-bio {
     font-family: 'Rubik', sans-serif;
     text-align: justify;
     padding:  20px;
@@ -78,6 +78,8 @@ figure {
 
 .post-card p {
     text-align: center;
+    display: flex;
+    flex-flow: column;
 }
 
 figure img {
@@ -92,7 +94,7 @@ figure figcaption {
     text-align: center;
 }
 
-.tablet, .large-screen, .bio {
+.tablet, .large-screen, .bio, .post-bio {
     display: none;
 }
 
@@ -137,6 +139,34 @@ figure figcaption {
 
     figure img {
         max-width: 200px;
+    }
+
+    .post-card {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "fg lk"
+        "p lk";
+    }
+
+    figure {
+        grid-area: fg;
+    }
+
+    figure p {
+        grid-area: p;
+    }
+
+    .post-bio {
+        grid-area: lk;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .post-bio p {
+        text-align: justify;
     }
 
     .blog-post {
