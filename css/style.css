@@ -258,19 +258,4 @@ figure figcaption {
         text-align: justify;
         padding:  20px;
     }
-
-    /*
-    .blog-post {
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
-    }
-
-    .blog-post >* {
-        padding: 10px;
-    }
-
-    .large-screen {
-        display: block;
-    }*/
 }

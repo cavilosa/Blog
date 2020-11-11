@@ -1,6 +1,7 @@
 body {
     background-color: grey;
 }
+
 section {
     display: grid;
     grid-template-columns: 1ft;
