@@ -156,7 +156,7 @@ footer {
 }
 
 @media (min-width:320px) and (max-width:600px) {
-    section{
+    section {
         margin: auto;
         line-height: 25px;
     }
@@ -175,10 +175,6 @@ footer {
 
     .icon-bar {
         flex-flow: row;
-    }
-
-    footer {
-
     }
 }
 
