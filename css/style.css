@@ -271,6 +271,12 @@ figure figcaption {
         grid-area: pl;
     }
 
+    .bio, #large-screen-1, #large-screen-2 {
+        font-family: 'Rubik', sans-serif;
+        text-align: justify;
+        padding:  20px;
+    }
+
     .bio {
         grid-area: bi;
         display: inline;
@@ -284,11 +290,5 @@ figure figcaption {
     #large-screen-2 {
         grid-area: ls2;
         display: inline;
-    }
-
-    .bio, #large-screen-1, #large-screen-2 {
-        font-family: 'Rubik', sans-serif;
-        text-align: justify;
-        padding:  20px;
     }
 }
